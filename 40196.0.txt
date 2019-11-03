@@ -1,0 +1,45 @@
+@0
+
+
+@1
+LP: MOV UP,ACC
+ JEZ PLUS
+ MOV 0,ACC
+ SAV
+ MOV 0,DOWN
+JMP LP
+PLUS: SWP
+ ADD 1
+ SUB 3
+ JEZ FND
+ MOV 0,DOWN
+ ADD 3
+ SWP
+JMP LP
+FND: MOV 1,DOWN
+
+@2
+
+
+@3
+
+
+@4
+MOV UP,DOWN
+
+@5
+
+
+@6
+
+
+@7
+
+
+@8
+MOV UP,RIGHT
+
+@9
+MOV LEFT,DOWN
+
+@10
